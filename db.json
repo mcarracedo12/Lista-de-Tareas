@@ -1,0 +1,46 @@
+{
+    "list": [
+        {
+            "id": 1,
+            "text": "Terminar modulo 3",
+            "dia": "Mayo, 07",
+            "reminder": true
+        },
+        {
+            "id": 2,
+            "text": "Terminar modulo 4",
+            "dia": "Mayo, 10",
+            "reminder": true
+        },
+        {
+            "id": 3,
+            "text": "Terminar modulo 5",
+            "dia": "Mayo, 15",
+            "reminder": true
+        },
+        {
+            "id": 4,
+            "text": "Terminar modulo 6",
+            "dia": "MAyo, 15",
+            "reminder": true
+        },
+        {
+            "id": 5,
+            "text": "Terminar modulo 7",
+            "dia": "Mayo, 18",
+            "reminder": true
+        },
+        {
+            "id": 6,
+            "text": "Terminar modulo 8",
+            "dia": "Mayo, 22",
+            "reminder": true
+        },
+        {
+            "id": 7,
+            "text": "Terminar modulo 9",
+            "dia": "Mayo, 30",
+            "reminder": true
+        }
+    ]
+}
