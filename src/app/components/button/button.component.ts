@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Task } from '../../tasks';
 
 
 @Component({
@@ -18,6 +19,7 @@ export class ButtonComponent implements OnInit {
 
   onClick(){
     this.btnClick.emit();
+    // console.log("Click en Boton de Agregar");
   }
 
 }

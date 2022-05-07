@@ -2,15 +2,11 @@
     <h3>
         {{task.id}}
         <div>
-            <i class="bi bi-pencil-fill"></i>
-            <i class="bi bi-eraser-fill" [ngStyle]="{'color':'red'}"></i>
+            <i class="bi bi-pencil-fill" (click)="modificarTarea()"></i>
+            <i class="bi bi-eraser-fill" [ngStyle]="{'color':'red'}" (click)="borrar()"></i>
         </div>
     </h3>
     <p>
         {{task.text}}
     </p>
-    <!-- {{task.dia}}
-       <i class="bi bi-plus-circle-fill"></i>
-        {{task.reminder}} -->
-    <!-- <i class="bi bi-plus-circle-fill"></i> -->
 </div>
