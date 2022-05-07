@@ -21,7 +21,10 @@ export class TasksComponent implements OnInit {
   }
 
   borrarTarea(task:Task){
-    console.log("Borrando tarea " + task.text);
+    console.log("Borrando tarea " + task.text + " con id " + task.id);
+    this.TaskService.deleteTask(task).subscribe(()=>[
+      this.tasks= this.tasks.filter(t=>t.id !=task.id)
+    ])
   }
 
 }
