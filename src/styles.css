@@ -77,3 +77,7 @@ body{
     flex: 2;
     height: 20px;
 }
+
+.task.reminder{
+    border-left: 5px solid gray;
+}

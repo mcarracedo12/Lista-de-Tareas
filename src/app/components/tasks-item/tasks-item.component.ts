@@ -2,6 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Task } from 'src/app/tasks';
 import { TASKS } from '../../mock-app';
 
+
 @Component({
   selector: 'app-tasks-item',
   templateUrl: './tasks-item.component.html',
@@ -10,6 +11,7 @@ import { TASKS } from '../../mock-app';
 export class TasksItemComponent implements OnInit {
   @Input()task:Task=TASKS[0];
   @Output() borrarTarea:EventEmitter<Task>=new EventEmitter()
+  @Output() onToggleReminder:EventEmitter<Task>= new EventEmitter()
   constructor() { }
 
   ngOnInit(): void {
@@ -20,6 +22,10 @@ export class TasksItemComponent implements OnInit {
   borrar(){
     this.borrarTarea.emit(this.task)
     console.log("Emitiendo Borrar tarea " + this.task.text);
+  }
+
+  onToggle(task:Task){
+    this.onToggleReminder.emit(task);
   }
 
 }
