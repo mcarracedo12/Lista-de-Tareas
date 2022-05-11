@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Task } from 'src/app/tasks';
+import { TaskService } from 'src/app/service/task.service';
 
 
 
@@ -10,7 +11,8 @@ import { Task } from 'src/app/tasks';
 })
 export class HeaderComponent implements OnInit {
   title: string = 'My Task List';
-  constructor() { }
+  tasks: Task[] = [];
+  constructor(private TaskService: TaskService) { }
 
   ngOnInit(): void {
   }
@@ -19,8 +21,14 @@ export class HeaderComponent implements OnInit {
     console.log("Toggle pressed!!");
   }
 
-  addTask(task:Task){
-    console.log(task);
+  addTask(task: Task) {
+    // let tasks=this.tasks.push(task);
+    this.TaskService.addTask(task).subscribe
+    (
+      (task)=>{
+        this.tasks.push(task);
+      }
+  )
   }
 
 }

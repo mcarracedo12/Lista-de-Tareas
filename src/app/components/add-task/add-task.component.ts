@@ -7,7 +7,7 @@ import { Task } from 'src/app/tasks';
   styleUrls: ['./add-task.component.css']
 })
 export class AddTaskComponent implements OnInit {
-  @Output()onAddTask:EventEmitter<Task>= new EventEmitter
+  @Output()onAddTask:EventEmitter<Task>= new EventEmitter();
   text: string = "";
   dia: string = "";
   reminder: boolean = false;
@@ -27,7 +27,6 @@ export class AddTaskComponent implements OnInit {
     if (!this.text) {
       alert("Agregar tarea!");
     };
-
     const { text, dia, reminder } = this;
     const newTask = { text, dia, reminder }
     // OTRA FORMA ES ESTA:
