@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Task } from 'src/app/tasks';
+
 
 
 @Component({
@@ -15,6 +17,10 @@ export class HeaderComponent implements OnInit {
 
   toggleAddTask(){
     console.log("Toggle pressed!!");
+  }
+
+  addTask(task:Task){
+    console.log(task);
   }
 
 }

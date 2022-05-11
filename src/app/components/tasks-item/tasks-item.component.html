@@ -1,6 +1,7 @@
 <div class="task" [ngClass]="{reminder:task.reminder}" (click)="onToggle(task)">
     <h3>
-        {{task.id}}
+        <!-- {{task.id}} -->
+        <h3>{{task.dia}}</h3>
         <div>
             <i class="bi bi-pencil-fill" (click)="modificarTarea()"></i>
             <i class="bi bi-eraser-fill" [ngStyle]="{'color':'red'}" (click)="borrar()"></i>

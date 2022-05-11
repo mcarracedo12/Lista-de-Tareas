@@ -1,0 +1,23 @@
+<!-- <form [formGroup]="form" (ngSubmit)="onEnviar($event)"> -->
+<form (ngSubmit)="onEnviar()">
+
+    <label for="text" class="col-form-label">
+        Tarea:
+    </label>
+    <input [(ngModel)]="text" name="text" class="form-control" type="text" id="text" placeholder="Tarea">
+
+    <label for="dia" class="col-form-label">
+        Agregue dia y hora:
+    </label>
+    <input [(ngModel)]="dia" name="dia" type="text" id="dia" class="form-control" placeholder="Dia...">
+
+    <label for="reminder" class="col-form-label">
+        Recordatorio:
+    </label>
+    <input [(ngModel)]="reminder" name="reminder" type="checkbox" id="reminder">
+
+    <button type="submit" value="Save Task" class="btn btn-primary">Agregar Tarea</button>
+    <button class="btn btn-primary">Cancelar</button>
+
+    <p>Dia  {{dia}} Texto: {{text}} Recordatorio: {{reminder}}</p>
+</form>

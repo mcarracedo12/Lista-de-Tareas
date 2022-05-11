@@ -4,7 +4,7 @@
       "id": 1,
       "text": "Terminar modulo 3",
       "dia": "Mayo, 07",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "id": 3,
       "text": "Terminar modulo 5",
       "dia": "Mayo, 15",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 4,

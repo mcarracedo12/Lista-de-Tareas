@@ -3,4 +3,5 @@
     <app-button color='green' text="Add Task" (btnClick)="toggleAddTask()">
         <!--  La funcion ToggleAddTask() Esta en Header.Component.ts  -->
     </app-button>
+    <app-add-task (onAddTask)="addTask($event)"></app-add-task>
 </header>
